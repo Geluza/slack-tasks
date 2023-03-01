@@ -12,7 +12,7 @@ class Product {
 //наполняем массив товарами
 const product1 = new Product('курfdтка', 2, 5, 'новая красивая женская курткаabc');
 const product2 = new Product('fdшорты', 3500, 5, 'удобные мужские шортыabc');
-const product3 = new Product('пппfdm', 2, 5, 'gggabc');
+const product3 = new Product('fd', 2, 5, 'gggabc');
 let arr =[];
 arr.push(product1);
 arr.push(product2);
@@ -54,7 +54,7 @@ function filter(str1, arr) {
         if(count===countValues) {
         result.push(arr[i]);
         }   
-     }  else if(valuesArr[j].operation === 'contains' && !arr[i].name.endsWith(valuesArr[j].value) && !arr[i].name.startsWith(valuesArr[j].value) && arr[i].name.includes(valuesArr[j].value)) {
+     }  else if(valuesArr[j].operation === 'contains' && arr[i].name.includes(valuesArr[j].value)) {
       count ++;
       if(count === countValues) {
         result.push(arr[i]);
@@ -74,7 +74,7 @@ function filter(str1, arr) {
     if(count===countValues) {
       result.push(arr[i])
       }   
-   }  else if(valuesArr[j].operation === 'contains' && !arr[i].description.endsWith(valuesArr[j].value) && !arr[i].name.startsWith(valuesArr[j].value) &&              arr[i].description.includes(valuesArr[j].value)) {
+   }  else if(valuesArr[j].operation === 'contains' && arr[i].description.includes(valuesArr[j].value)) {
       count ++;
      if(count === countValues) {
        result.push(arr[i])
