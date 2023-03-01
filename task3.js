@@ -151,7 +151,7 @@ function filter(str1, arr) {
     }
       
     }
-   return result;
+   console.log(result);
    
   }
   

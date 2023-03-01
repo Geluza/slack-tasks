@@ -21,7 +21,7 @@ for (let i = 0; i < b.length; ++i) {
   }
 }
 
-return a.reverse().join("");
+console.log(a.reverse().join(""));
 }
 
 
@@ -53,7 +53,7 @@ let b = this.b;
     } else if(a === b) {
     result = 0;
     }
-   return result;
+   console.log(result);
 }
 
 
@@ -81,7 +81,7 @@ for (let i = 0; i < result.length; i++) {
     result[i + 1] = move;
 }
 
-return result.reverse().join('');
+console.log(result.reverse().join(''));
 }      
 
 }

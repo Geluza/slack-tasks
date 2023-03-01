@@ -11,7 +11,7 @@ function toLowerCase(word) {
        newWord += newLetters;
     } 
      
-     return newWord;
+     console.log(newWord);
     }
     
     
@@ -20,7 +20,7 @@ function toLowerCase(word) {
     
     function placementOfSpaces(sentence) {
            let string = sentence.replace(/\s*([,.!?:;])[,.!?:;]*\s*/g, '$1 ');
-         return string;
+         console.log(string);
      
     }
     
@@ -29,7 +29,7 @@ function toLowerCase(word) {
     function countOfWords(str) {
     let newStr = str.replace(/[^a-zа-яё]/gi, ' ') //удаляем все символы кроме букв и пробелов
      newStr = newStr.replace(/\s+/g,' ').trim()
-     return newStr.split(' ').length;
+     console.log(newStr.split(' ').length);
     }
     
     
@@ -59,7 +59,7 @@ function toLowerCase(word) {
       text = key + "-" + count[key] + "раз(а), ";
         result += text;
     }
-        return result;
+        console.log(result);
       }
     
     
